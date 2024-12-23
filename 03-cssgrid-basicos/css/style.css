@@ -214,5 +214,7 @@ h1, h2 {
     place-content:initial;
 }
 
-/*Soy puto idiota naco estupido*/
-/*Eduar goldo*/
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
