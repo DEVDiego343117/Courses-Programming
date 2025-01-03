@@ -1,0 +1,24 @@
+.oferta {
+    background-color: #00446e;
+    text-align: center;
+    padding: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.texto {
+    font-size: 3rem;
+    margin: 0;
+}
+
+@media(max-width: 800px) {
+    .oferta{
+        max-width: 40rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .oferta{
+        max-width: 100%;
+    }
+}
