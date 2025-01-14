@@ -18,7 +18,9 @@
     <!-- <link rel="stylesheet" href="css/06.css"> -->
     <!-- <link rel="stylesheet" href="css/07.css"> -->
     <!-- <link rel="stylesheet" href="css/08.css"> -->
-    <link rel="stylesheet" href="css/09.css">
+    <!-- <link rel="stylesheet" href="css/09.css"> -->
+    <link rel="stylesheet" href="css/010.css">  
+    <link rel="stylesheet" href="css/011.css">
     
 </head>
 <body>
@@ -85,9 +87,15 @@
         </div>
 
         <h2>Imágenes Responsive</h2>
-        <img src="img/imagen.jpg" alt="imagen responsive" >
+        <!-- <img src="img/imagen.avif" alt="imagen responsive" > -->
 
         <h2>Formatos Modernos</h2>
+
+        <picture>
+            <source srcset="img/imagen.avif" type="image/avif">
+            <source srcset="img/imagen.webp" type="image/web.p">
+            <img loading="lazy" src="img/imagen.jpg" alt="imagen">
+        </picture>
 
 
         <h2>Formatos Modernos con SRC SET</h2>
