@@ -99,6 +99,32 @@
 
 
         <h2>Formatos Modernos con SRC SET</h2>
+        <picture>
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="img/imagen.avif 1920w,
+                        img/imagen-1000.avif 1280w
+                        img/imagen-700.avif 640w"
+                type="imagen/avif"
+            >
+
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="img/imagen.webp 1920w,
+                        img/imagen-1000.avif 1280w
+                        img/imagen-700.avif 640w"
+                type="imagen/webp"
+            >
+
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="img/imagen.jpg 1920w,
+                        img/imagen-1000.avif 1280w
+                        img/imagen-700.avif 640w"
+                type="imagen/jpeg"
+            >
+            <img loading="lazy" src="img/imagen.jpg" alt="imagen">
+        </picture>
 
     </div>
 
