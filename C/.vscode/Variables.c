@@ -8,7 +8,7 @@ int main(){
 
     int age = 21; //Entero
     float prom = 9.5; //Decimal
-    char letter = 'O'; //Unico caracter
+    char letter = a;
     char name[] = "Diego"; // array of characters
 
     printf("Tienes %i de edad\n" ,age);
