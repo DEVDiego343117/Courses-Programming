@@ -1,3 +1,1 @@
-import { printMultiplicationTable } from "./helpers/print-multiplication-table";
-
-printMultiplicationTable(4);
+console.log("ola:d")
