@@ -5,14 +5,16 @@ class Car {
     speed: number;
     fuelTank: number;
     isRunning: boolean;
+    type: string;
 
     constructor() {
-        this.brand = "Camaro";
+        this.brand = "No";
         this.doors = 4;
         this.gearbox = "Automatico";
         this.speed = 150;
-        this.fuelTank = 50;
+        this.fuelTank = 0;
         this.isRunning = false;
+        this.type = "No tipo";
 
     }
 
@@ -31,10 +33,24 @@ class Car {
         console.log("El carro esta encendido");
         
     }
+
+    fillTank (gas: number) {
+        if (gas <= 0) {
+            ("La gasolina debe ser mayor a 1");
+            return;
+        }
+
+        let newFuelTank = this.fuelTank + gas;
+        if (newFuelTank >= 100) {
+            this.fuelTank = 100;
+        } else {
+            this.fuelTank = newFuelTank;
+        }
+    }
 }
 
-let camaro = new Car();
+let myHonda = new Car();
 
-console.log(camaro);
-camaro.turnOn();
-camaro.turnOn();
+myHonda.turnOn();
+myHonda.fillTank(100);
+console.log(myHonda);
